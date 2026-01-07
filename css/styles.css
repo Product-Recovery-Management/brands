@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header h1 {
+    color: #1271b9;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.header p {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* PRM Filtration */
+.prm-filtration {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prm-filtration:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+}
+
+.prm-filtration a {
+    text-decoration: none;
+    display: block;
+}
+
+.prm-filtration img {
+    max-width: 100%;
+    height: auto;
+    max-height: 144px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.prm-filtration:hover img {
+    transform: scale(1.05);
+}
+
+.prm-filtration .brand-label {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #1271b9 0%, #0f8a43 100%);
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Other Brands Grid */
+.brands-section {
+    margin-top: 40px;
+}
+
+.brands-section h2 {
+    color: #1271b9;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.brand-card {
+    background: white;
+    border-radius: 12px;
+    padding: 27px 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 153px;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.brand-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.brand-card img {
+    width: 100%;
+    height: 108px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.brand-card:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .prm-filtration {
+        padding: 40px 20px;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .brand-card {
+        padding: 30px 20px;
+        min-height: 150px;
+    }
+
+    .brand-card img {
+        height: 120px;
+    }
+}

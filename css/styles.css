@@ -37,7 +37,7 @@ body {
 .prm-filtration {
     background: white;
     border-radius: 16px;
-    padding: 40px;
+    padding: 34px;
     margin-bottom: 50px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     text-align: center;
@@ -57,7 +57,7 @@ body {
 .prm-filtration img {
     max-width: 100%;
     height: auto;
-    max-height: 144px;
+    max-height: 122px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
